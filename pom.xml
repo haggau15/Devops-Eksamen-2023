@@ -14,7 +14,7 @@
 	<name>bakemyday</name>
 	<description>Demo spring boot app</description>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>18</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
