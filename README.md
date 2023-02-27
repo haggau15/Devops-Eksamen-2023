@@ -160,4 +160,4 @@ Under Settings/branch_protection_rules/new i repoet kan man huke av
 ### 2-Require deployments to succeed before merging
 
 # Oppgave 3
-Forsøkte å sette opp docker men fikk det ikke til å lage image av applikasjonen i tide.
+Forsøkte å sette opp docker men fikk det ikke til å lage image av applikasjonen i tide men jeg lot Dockerfile være igjen i prosjektet
