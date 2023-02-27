@@ -117,10 +117,10 @@ en versjon av prosjektet som er klart til å bli deployed. Siden nye kode
 hyppigt blir merget vil man som nevnt over ha en ganske up to date versjon alltid klar.
 Dette gjør det igjen mye raskere å sende ut nye versjoner og hvis det skulle være noe 
 problematisk med den deployede versjonen vil ikke være enorme forskjeller fra den forrige.
+Samt kan det gjøre brukeren mer fornøyd med løsningen hvis oppdateringer rulles ut ofte.
 
 
- "Forklar hvorfor det er enklere å få denne innsikten når man adopterer DevOps, i forhold til
- Vannfall og et skille mellom drift- og utviklingsteam."
+ ###"Forklar hvorfor det er enklere å få denne innsikten når man adopterer DevOps, i forhold til Vannfall og et skille mellom drift- og utviklingsteam."
 
 Vannfall er en annen måte å gjøre prosjekter på som er linær, og langt mer rigid enn devops.
 Utviklingsprosessen behandles som et samlebånd hvor all kode settes sammen til slutt uten testing 
