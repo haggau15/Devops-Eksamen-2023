@@ -159,3 +159,5 @@ Under Settings/branch_protection_rules/new i repoet kan man huke av
 ### 3-Require status checks to pass before merging
 ### 2-Require deployments to succeed before merging
 
+# Oppgave 3
+Forsøkte å sette opp docker men fikk det ikke til å lage image av applikasjonen i tide.
