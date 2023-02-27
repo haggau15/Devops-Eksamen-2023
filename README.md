@@ -1,4 +1,4 @@
-#Svar ligger nederst i denne filen
+# Svar ligger nederst i denne filen
 # Konteeksamen  - PGR301
 
 # Scenario
