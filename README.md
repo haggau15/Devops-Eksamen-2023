@@ -147,16 +147,16 @@ kan man feks få opp grafer på dataen som sendes inn. Basert på grenser man se
 få en alarm til å gå hvis en verdi er utenfor et gitt spenn.
 
 # Del 2 Oppgave 2:
-1.Det ikke er mulig å merge en Pull Request inn i main branch, 
-2.uten at koden kompilerer og
-3.enhetstester er kjørt uten feil.
-4.Minst en annen person i teamet har godkjent endringen
+### 1.Det ikke er mulig å merge en Pull Request inn i main branch. 
+### 2.uten at koden kompilerer og.
+### 3.enhetstester er kjørt uten feil.
+### 4.Minst en annen person i teamet har godkjent endringen.
 
 Under ettings/branch_protection_rules/new i repoet kan man huke av
 
-1-Require a pull request before merging
+### 1-Require a pull request before merging
 	Under denne kan man huke av 
-	4-Require approvals, hvor man kan sette antall
-3-Require status checks to pass before merging
-2-Require deployments to succeed before merging
+### 4-Require approvals, hvor man kan sette antall
+### 3-Require status checks to pass before merging
+### 2-Require deployments to succeed before merging
 
