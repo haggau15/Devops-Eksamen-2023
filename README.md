@@ -1,3 +1,4 @@
+#Svar ligger nederst i denne filen
 # Konteeksamen  - PGR301
 
 # Scenario
@@ -98,9 +99,9 @@ Fullfør ```docker ..```
 
 
 
-### Svar:
+# Svar:
 ## Del 1:
-# Kontinuerlig integrasjon:
+### Kontinuerlig integrasjon:
 Det er en praksis hvor utviklere som jobber på samme prosjekt regelmessig 
 merger kode til et repository som automatisk blir sjekket om den kjører samt om testene 
 passer. Siden kode merges ofte vil siste kjørbare build være ganske up to date.
@@ -110,7 +111,7 @@ er mye lettere å nøste opp i enn om man hadde latt det gå lang tid.
 Ved hver merge kan man inkludere praksiser som at noen andre må godkjenne det som 
 også hjelper for å opprettholde gode kodepraksiser
 
-# Kontinuerlige leveranser:
+### Kontinuerlige leveranser:
 Dette bygger direkte på kontinuerlig integrasjon da det er å alltid ha
 en versjon av prosjektet som er klart til å bli deployed. Siden nye kode
 hyppigt blir merget vil man som nevnt over ha en ganske up to date versjon alltid klar.
@@ -145,7 +146,7 @@ Via event metoder kan ønsket data sendes til cloudwatch når spesifikke hendels
 kan man feks få opp grafer på dataen som sendes inn. Basert på grenser man setter selv kan man
 få en alarm til å gå hvis en verdi er utenfor et gitt spenn.
 
-### Del 2 Oppgave 2:
+# Del 2 Oppgave 2:
 1.Det ikke er mulig å merge en Pull Request inn i main branch, 
 2.uten at koden kompilerer og
 3.enhetstester er kjørt uten feil.
