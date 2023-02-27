@@ -101,7 +101,49 @@ Fullfør ```docker ..```
 Svar:
 Del 1:
 Kontinuerlig integrasjon:
+Det er en praksis hvor utviklere som jobber på samme prosjekt regelmessig 
+merger kode til et repository som automatisk blir sjekket om den kjører samt om testene 
+passer. Siden kode merges ofte vil siste kjørbare build være ganske up to date.
+Siden man merger ofte vil problemer med koden komme opp ofte men det betyr også at de
+er mye lettere å nøste opp i enn om man hadde latt det gå lang tid.
 
+Ved hver merge kan man inkludere praksiser som at noen andre må godkjenne det som 
+også hjelper for å opprettholde gode kodepraksiser
+
+Kontinuerlige leveranser:
+Dette bygger direkte på kontinuerlig integrasjon da det er å alltid ha
+en versjon av prosjektet som er klart til å bli deployed. Siden nye kode
+hyppigt blir merget vil man som nevnt over ha en ganske up to date versjon alltid klar.
+Dette gjør det igjen mye raskere å sende ut nye versjoner og hvis det skulle være noe 
+problematisk med den deployede versjonen vil ikke være enorme forskjeller fra den forrige.
+
+
+"Forklar hvorfor det er enklere å få denne innsikten når man adopterer DevOps, i forhold til
+Vannfall og et skille mellom drift- og utviklingsteam."
+
+Vannfall er en annen måte å gjøre prosjekter på som er linær, og langt mer rigid enn devops.
+Utviklingsprosessen behandles som et samlebånd hvor all kode settes sammen til slutt uten testing 
+underveis for å se hvordan de forskjellige komponentene jobber sammen. 
+
+Med Devops vil ny funsksjonalitet kontinuerlig merges og eventuelle feil blir da ganske raskt
+plukket opp. Siden man også alltid har en kjørende versjon kan man implementere metrikker som 
+fanger opp alt mulig av data på den kjørende applikasjonen. For kodeoptimalisering kan man feks
+sjekke minnebruk og tid segmenter av koden bruker for å finne bottlenecks.
+
+Forretningsmessig kan man finne på metrikker som viser hvordan kundene bruker applikasjonen. 
+Er det feks deler som er lite intuitive, hvor mye brukes den og ikke minst, hvor mange.
+En annen viktig ting er å ha sjekker på at alt er oppe å kjører på applikasjonen. 
+For kundenes tilfredsstillelse er det viktig at tjenesten er tilfjengelig så mye som mulig.
+
+For å sette opp måling av metrikker kan man bruke cloudwatch og terraform. Terraform hjelper
+med å sette infrastrukturen som kode og cloudwatch er tjenesten som brukes for å måle data.
+I prosjektet trenger man en mappe i roten til prosjektet som heter infra og har to filer-
+dashboard.tf og variables.tf. Dashboard inneholder kode for å sette opp et cloudwatch dashboard.
+I prosjektet kjører man terraform init, plan og apply.
+I kiledekodemappen lager man en.java fil for å sette opp konfigurasjonen mot cloudwatch.
+Via event metoder kan ønsket data sendes til cloudwatch når spesifikke hendelser skjer og i cloudwatch
+kan man feks få opp grafer på dataen som sendes inn. Basert på grenser man setter selv kan man
+få en alarm til å gå hvis en verdi er utenfor et gitt spenn.
 
 Del 2 Oppgave 2:
 1.Det ikke er mulig å merge en Pull Request inn i main branch, 
